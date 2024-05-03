@@ -30,12 +30,12 @@ public class ListaPromedio {
         return calcularpromedio;
     }
 
-    public static void imprimirPromedio(List<PromedioCarrera> reportesCarrera) {
+    public static void imprimirPromedio(List<PromedioCarrera> calcularpromedio) {
 
-        for (PromedioCarrera reporte : reportesCarrera) {
-            System.out.println("Carrera: " + reporte.getCarrera().getNombre());
-            System.out.println("Promedio de notas: " + reporte.getPromedioNotas());
-            System.out.println("Promedio de edades: " + reporte.getPromedioEdadEstudiantes());
+        for (PromedioCarrera calculo : calcularpromedio) {
+            System.out.println("Carrera: " + calculo.getCarrera().getNombre());
+            System.out.println("Promedio de notas: " + calculo.getPromedioNotas());
+            System.out.println("Promedio de edades: " + calculo.getPromedioEdadEstudiantes());
             System.out.println();
         }
     }
